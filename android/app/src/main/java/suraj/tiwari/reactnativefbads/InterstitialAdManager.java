@@ -72,6 +72,30 @@ public class InterstitialAdManager extends ReactContextBaseJavaModule implements
     }
   }
 
+  @ReactMethod
+  public void preloadAd(String placementId, Promise p) {
+    if (mPromise != null) {
+      p.reject("E_FAILED_TO_SHOW", "Only one `preloadAd` can be called at once");
+      return;
+    }
+    ReactApplicationContext reactContext = this.getReactApplicationContext();
+
+    mViewAtOnce = false;
+    mPromise = p;
+    mInterstitial = new InterstitialAd(reactContext, placementId);
+    mInterstitial.setAdListener(this);
+    mInterstitial.loadAd();
+  }
+
+  @ReactMethod
+  public void showPreloadedAd(String placementId, Promise p) {
+    if (mDidLoad) {
+      mInterstitial.show();
+    } else {
+      mViewAtOnce = true;
+    }
+  }
+
   @Override
   public String getName() {
     return "CTKInterstitialAdManager";
