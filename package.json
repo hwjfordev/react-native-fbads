@@ -1,29 +1,41 @@
 {
-  "name": "react-native-fbads",
-  "version": "6.3.1",
-  "description": "Native Facebook Ads for React Native",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/callstack/react-native-fbads"
+  "_from": "react-native-fbads",
+  "_id": "react-native-fbads@6.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-DxAdHX8xDJ5/VyyFseyRJVPjzfI5+0MLJY4AC2nQqx706oAIkti/UAYQVQymeuiCeyU7lNKizmUlolhk6LeoTA==",
+  "_location": "/react-native-fbads",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-fbads",
+    "name": "react-native-fbads",
+    "escapedName": "react-native-fbads",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "homepage": "https://github.com/callstack/react-native-fbads",
-  "main": "dist/lib/index.js",
-  "typings": "dist/types/index.d.ts",
-  "directories": {
-    "example": "example"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-fbads/-/react-native-fbads-6.3.1.tgz",
+  "_shasum": "31c53eabccab6b0615e8a487223720af94be3ff6",
+  "_spec": "react-native-fbads",
+  "_where": "D:\\tmp\\test_delete_now",
+  "author": {
+    "name": "Suraj Tiwari",
+    "email": "surajtiwari020@gmail.com"
   },
-  "scripts": {
-    "tsc": "tsc --project .",
-    "lint": "tslint --project ."
+  "bugs": {
+    "url": "https://github.com/callstack/react-native-fbads/issues"
   },
-  "author": "Suraj Tiwari <surajtiwari020@gmail.com>",
-  "license": "MIT",
-  "peerDependencies": {
-    "react-native": "*"
-  },
+  "bundleDependencies": false,
   "dependencies": {
     "fbemitter": "^2.1.1"
   },
+  "deprecated": false,
+  "description": "Native Facebook Ads for React Native",
   "devDependencies": {
     "@types/fbemitter": "^2.0.32",
     "@types/react-native": "^0.57.4",
@@ -32,12 +44,9 @@
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.1.2"
   },
-  "keywords": [
-    "react-native",
-    "facebook",
-    "Audience Network",
-    "Native ads"
-  ],
+  "directories": {
+    "example": "example"
+  },
   "files": [
     "android",
     "ios",
@@ -47,5 +56,28 @@
     "yarn.lock",
     "dist",
     "ReactNativeAdsFacebook.podspec"
-  ]
+  ],
+  "homepage": "https://github.com/callstack/react-native-fbads",
+  "keywords": [
+    "react-native",
+    "facebook",
+    "Audience Network",
+    "Native ads"
+  ],
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "name": "react-native-fbads",
+  "peerDependencies": {
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callstack/react-native-fbads.git"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "tsc": "tsc --project ."
+  },
+  "typings": "dist/types/index.d.ts",
+  "version": "6.3.1"
 }
